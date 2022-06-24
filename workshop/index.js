@@ -12,3 +12,13 @@ function searchParamsToObject(string) {
   }
   return obj;
 }
+
+function isLeapYear(year) {
+  if ((year % 4 === 0 && year % 100 != 0) || year % 400 === 0) {
+    return true;
+  } else {
+    return new Error(`${year} is not a leap year`);
+  }
+}
+
+console.log(isLeapYear(1600));
