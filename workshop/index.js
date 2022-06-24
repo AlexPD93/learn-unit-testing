@@ -1,4 +1,4 @@
-// "pikachu" -> "https://pokeapi.co/api/v2/pikachu"
+const name = "pikachu";
 
 function makeUrl(name) {
   return "https://pokeapi.co/api/v2/" + name;
