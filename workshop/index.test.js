@@ -25,3 +25,21 @@ test(`Objects contain same email`, () => {
   ).email;
   equal(actual, expected);
 });
+
+test("What if year is a string?", () => {
+  const expected = true;
+  const actual = isLeapYear("2000");
+  equal(actual, expected);
+});
+
+test("What if year is negative?", () => {
+  const expected = true;
+  const actual = isLeapYear(-1900);
+  equal(actual, expected);
+});
+
+test(`What if year is boolean?`, () => {
+  const expected = true;
+  const actual = isLeapYear(true);
+  equal(actual, expected);
+});

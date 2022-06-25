@@ -20,5 +20,3 @@ function isLeapYear(year) {
     return new Error(`${year} is not a leap year`);
   }
 }
-
-console.log(isLeapYear(1600));
