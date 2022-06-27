@@ -8,6 +8,7 @@ function makeUrl(name) {
 // the easy way:
 function searchParamsToObject(paramString) {
   const params = new URLSearchParams(paramString);
+  console.log(params);
   return Object.fromEntries(params);
 }
 

@@ -43,3 +43,15 @@ test(`What if year is boolean?`, () => {
   const actual = isLeapYear(true);
   equal(actual, expected);
 });
+
+test(`isLeapYear can handle multiples of 4`, () => {
+  equal(isLeapYear(2020), true, "2020 is a leap year");
+});
+
+test(`isLeapYear can handle multiples of 100`, () => {
+  notEqual(isLeapYear(1900), true, "1900 is not a leap year");
+});
+
+test(`isLeapYear can handle multiples of 400`, () => {
+  equal(isLeapYear(1600), true, "1600 is a leap year");
+});
